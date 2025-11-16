@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="TunAdapter\" />
+    <Folder Include="MaskAdapter\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlowPhantom.Infrastructure\FlowPhantom.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -4,6 +4,28 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Network\Crypto\Noise\" />
+    <Folder Include="Network\Crypto\Obfuscation\" />
+    <Folder Include="Network\Masking\HeaderGenerator\" />
+    <Folder Include="Network\Logging\" />
+    <Folder Include="Network\Config\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+    <PackageReference Include="NetWintun" Version="1.0.3" />
+    <PackageReference Include="TunnelForge.WinTun" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+   
+    <ProjectReference Include="..\FlowPhantom.Application\FlowPhantom.Application.csproj" />
+   
+    <ProjectReference Include="..\FlowPhantom.Domain\FlowPhantom.Domain.csproj" />
+  </ItemGroup>
 
 </Project>

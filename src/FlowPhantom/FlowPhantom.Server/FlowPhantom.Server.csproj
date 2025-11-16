@@ -7,4 +7,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Receivers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlowPhantom.Client\FlowPhantom.Client.csproj" />
+    <ProjectReference Include="..\FlowPhantom.Infrastructure\FlowPhantom.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
